@@ -13,3 +13,5 @@
 - Variation Product
 - Product
 - Warehouse
+- Outlet
+

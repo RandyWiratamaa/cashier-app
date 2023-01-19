@@ -14,6 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('warehouses', function (Blueprint $table) {
+            $table->id();
             $table->string('batch_number')->unique();
             $table->unsignedBigInteger('product_id');
             $table->double('quantity');

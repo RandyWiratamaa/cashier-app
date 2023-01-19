@@ -7,6 +7,7 @@ use App\Http\Controllers\Api\OutletController;
 use App\Http\Controllers\Api\ProductController;
 use App\Http\Controllers\Api\WarehouseController;
 use App\Http\Controllers\Api\PassportAuthController;
+use App\Http\Controllers\Api\StockMutationController;
 use App\Http\Controllers\Api\CategoryProductController;
 use App\Http\Controllers\Api\VariationProductController;
 
@@ -44,3 +45,6 @@ Route::post('warehouse', [WarehouseController::class, 'store']);
 
 Route::get('outlets', [OutletController::class, 'index']);
 Route::post('outlet', [OutletController::class, 'store']);
+
+Route::get('stock-mutations', [StockMutationController::class, 'index']);
+Route::post('stock-mutation', [StockMutationController::class, 'store']);
