@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Models\Warehouse;
 use Illuminate\Http\Request;
+use App\Models\StockByOutlet;
 use App\Models\StockMutation;
 use App\Http\Controllers\ApiController;
 
@@ -27,6 +28,7 @@ class StockMutationController extends ApiController
 
         $stock_mutation = new StockMutation();
         $warehouse = new Warehouse();
+        $outlet = new StockByOutlet();
         // return $request->batch_number;
         // return $stock_mutation->checkProductIfNotExist($request->batch_number);
 
@@ -42,6 +44,7 @@ class StockMutationController extends ApiController
             ]);
             if($data) {
                 $warehouse->subtractionStock($request->batch_number, $request->quantity);
+                $outlet->additionStock($request->batch_number, $request->outlet_id, $request->quantity);
                 return $this->showOne($data);
             }
         }

@@ -1,0 +1,339 @@
+{
+	"info": {
+		"_postman_id": "9860b26f-05a0-4aca-877c-bdfed9c3476c",
+		"name": "mini-pos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cashier-app.dev.com/api/variation-product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "s",
+							"type": "default"
+						},
+						{
+							"key": "description",
+							"value": "small",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "cashier-app.dev.com/api/variation-product",
+					"host": [
+						"cashier-app",
+						"dev",
+						"com"
+					],
+					"path": [
+						"api",
+						"variation-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cashier-app.dev.com/api/outlet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "outlet-001",
+							"type": "default"
+						},
+						{
+							"key": "province_id",
+							"value": "31",
+							"type": "default"
+						},
+						{
+							"key": "regency_id",
+							"value": "3171",
+							"type": "default"
+						},
+						{
+							"key": "district_id",
+							"value": "3171050",
+							"type": "default"
+						},
+						{
+							"key": "village_id",
+							"value": "3171050003",
+							"type": "default"
+						},
+						{
+							"key": "address_detail",
+							"value": "Jl. ciputat raya",
+							"type": "default"
+						},
+						{
+							"key": "postal_code",
+							"value": "12240",
+							"type": "default"
+						},
+						{
+							"key": "phone_number",
+							"value": "123456789",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "cashier-app.dev.com/api/outlet",
+					"host": [
+						"cashier-app",
+						"dev",
+						"com"
+					],
+					"path": [
+						"api",
+						"outlet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cashier-app.dev.com/api/stock-mutation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "batch_number",
+							"value": "BAJU54321",
+							"type": "default"
+						},
+						{
+							"key": "quantity",
+							"value": "200",
+							"type": "default"
+						},
+						{
+							"key": "outlet_id",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "date",
+							"value": "2022-01-20",
+							"type": "default"
+						},
+						{
+							"key": "documentation",
+							"value": "photo4.jpg",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "cashier-app.dev.com/api/stock-mutation",
+					"host": [
+						"cashier-app",
+						"dev",
+						"com"
+					],
+					"path": [
+						"api",
+						"stock-mutation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cashier-app.dev.com/api/warehouse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "batch_number",
+							"value": "baju-002",
+							"type": "default"
+						},
+						{
+							"key": "product_id",
+							"value": "2",
+							"type": "default"
+						},
+						{
+							"key": "quantity",
+							"value": "5000",
+							"type": "default"
+						},
+						{
+							"key": "unit_id",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "purchase_price",
+							"value": "80000",
+							"type": "default"
+						},
+						{
+							"key": "date_of_entry",
+							"value": "2022-01-05",
+							"type": "default"
+						},
+						{
+							"key": "expired_date",
+							"value": "2022-12-12",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "cashier-app.dev.com/api/warehouse",
+					"host": [
+						"cashier-app",
+						"dev",
+						"com"
+					],
+					"path": [
+						"api",
+						"warehouse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cashier-app.dev.com/api/product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "product-002",
+							"type": "default"
+						},
+						{
+							"key": "category_id",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "variation_id",
+							"value": "2",
+							"type": "default"
+						},
+						{
+							"key": "description",
+							"value": "description-001",
+							"type": "default"
+						},
+						{
+							"key": "image",
+							"value": "img-002.jpg",
+							"type": "default"
+						},
+						{
+							"key": "barcode",
+							"value": "123456789",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "cashier-app.dev.com/api/product",
+					"host": [
+						"cashier-app",
+						"dev",
+						"com"
+					],
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cashier-app.dev.com/api/category-product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "category-001",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "cashier-app.dev.com/api/category-product",
+					"host": [
+						"cashier-app",
+						"dev",
+						"com"
+					],
+					"path": [
+						"api",
+						"category-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cashier-app.dev.com/api/unit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "pcs",
+							"type": "default"
+						},
+						{
+							"key": "description",
+							"value": "pieces",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "cashier-app.dev.com/api/unit",
+					"host": [
+						"cashier-app",
+						"dev",
+						"com"
+					],
+					"path": [
+						"api",
+						"unit"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
